@@ -40,7 +40,9 @@ public class ReqResSteps extends BaseTest {
                 .post("/api/login");
 
         System.out.println(BaseTest.response.asString()); // va afișa tokenul sau eroarea
-        System.out.println("test");
+        System.out.println("test1");
+        System.out.println("test2");
+        System.out.println("test3");
         if (BaseTest.response.statusCode() == 200) {
             loginResponse = BaseTest.response.as(LoginResponse.class);
         }
